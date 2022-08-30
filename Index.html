@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGMVIP</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+</head>
+
+<body>
+    <div id="1stdiv">
+        <hr>
+        <h1>LetsGrowMore | <small>Web Development Intern</small></h1>
+        <h3>Task-03</h3>
+        <hr>
+        <h2>STUDENT ENROLLMENT FORM</h2>
+        <hr id="Line">
+        <div id="Bodydiv">
+            <div  id="reg">
+                <table border="3" id ="form">
+                    <tr>
+                        <td>Name : &nbsp;</td>
+                        <td><input type="text" placeholder="Enter Your Name" name="Sname" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Contact : &nbsp;</td>
+                        <td><input type="text" placeholder="0xxxxxxxxxx" name="phoneno" id="contact" required></td> 
+                    </tr>
+                    <tr>
+                        <td>Email : &nbsp;</td>
+                        <td><input type="text" placeholder="xyz@xyz.com" name="email" id="email" autocomplete="off" required></td> 
+                    </tr>
+                    <tr>
+                        <td>Age : &nbsp;</td>
+                        <td><input type="number" placeholder="Enter Your Age" name="age" id="age" required></td> 
+                    </tr>
+                    <tr>
+                        <td>Gender : &nbsp; </td>
+                        <td><input type="radio" id = "male" name="gender" value="Male">Male 
+                        <input type="radio" id="female" name="gender" value="Female">Female</td>
+                    </tr>
+                    <tr>
+                        <td>Skills : &nbsp; </td>
+                        <td><input type="checkbox" id = "HTML" name="skill" value="HTML">HTML 
+                        <input type="checkbox" id="CSS" name="skill" value="CSS">CSS
+                        <input type="checkbox" id = "JS" name="skill" value="JS">JS </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button  class="btn btn-primary" onclick="SubmitStudent()" id="enrollbtn">Enroll</button></td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div id="enr">
+                <table border="3" id="show">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Contact</th>
+                            <th>Email</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Skills</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div> 
+    </div>
+    <script type="text/javascript"  src="form.js">
+    </script>
+</body>
+</html>
